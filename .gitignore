@@ -1,0 +1,12 @@
+cd ..
+@"
+node_modules/
+dist/
+.env
+.idea/
+target/
+"@ | Out-File -Encoding utf8 .gitignore
+
+git add .
+git commit -m "chore: cria frontend com Vite (React + TS)"
+git log --oneline
